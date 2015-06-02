@@ -1,0 +1,46 @@
+<p><h3><b>Stage 0: Basics of the Web and HTML</b></h3></p>
+
+<p>HTML is a markup language which allows structuring of documents for view in a browser.</p>
+
+<p>An HTML document typically displays:<br>
+  -text content<br>
+  -markup (tags)<br>
+  -references to other documents<br>
+  -links to other pages</p>
+
+<p>Structuring of the document is achieved with tags.  Generally these tags come in pairs of the form <b>&ltTAG&gtContent&lt/TAG&gt</b>, where <b>TAG</b> is an opening tag, <b>Content</b> is the content to be displayed in the document, and <b>/TAG</b> is a closing tag.</p>
+
+<p>The opening tag lets the browser know that the following content is to be structured in some particular way, while the closing tag lets the browser know to stop applying that structure.</p>
+
+<p>Additionally, tags may have attributes and then take the form <b>&ltTAG ATTR="value"&gt.</b></p>
+
+<p><b>&lta href="www.google.com"&gt<a href="www.google.com">Google</a>&lt/a&gt</b> is an element containing an anchor tag which lets the browser know that the enclosed content is a hyperlink which should point to the URL for <a href="www.google.com">Google.</a></p>
+
+<p>Some basic tags are<br>
+  &ltb&gt &nbsp&nbsp   for bold<br>
+  &ltem&gt &nbsp&nbsp  for emphasis<br>
+  &lta&gt &nbsp&nbsp  for ancoring a hyperlink<br>
+  &ltimg&gt &nbsp&nbsp  for including an image<br>
+  &ltbr&gt &nbsp&nbsp  for a line break<br>
+  &ltp&gt&nbsp&nbsp  for enclosing a paragraph</p>
+
+<p>The <b>&ltbr&gt</b> tag is a member of a certain class of tags called <b>void</b> tags.  Its function does not require a closing tag, so it is used by itself.  It simply creates a line break in the document.</p>
+
+<p>This difference leads to a conceptual difference in tags.  Some are <b>inline</b> and some are <b>block</b>.  Block tags, like &ltp&gt&lt/p&gt, actually create a block of markup in the document.  The block may then contain other attributes, such as height and width.</p>
+<br><br>
+<p>An actual HTML document takes the form...<br><br>
+
+&lt!DOCTYPE HTML&gt<br>   
+&lthtml&gt<br>            
+&lthead&gt<br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&lttitle&gtTitle of Page&lt/title&gt<br>
+&lt/head&gt<br>
+&ltbody&gt<br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&ltTAGS&gtContent&lt/TAGS&gt<br>
+&lt/body&gt<br>
+&lt/html&gt</p>
+
+<p>We can see that this document is in three parts.  There is a <b>doctype</b> line, letting the browser know that the following document is in HTML.  There is a <b>head</b>, which contains information about the document, including the title to display in the browser address bar.  And there is a <b>body</b>, which contains the actual content and markup to be displayed on the page.</p>
+<p>The head and body are enclosed in opening and closing tags, encompassing their information and setting it apart from other sections.  Opening and closing <b>html</b> tags enclose the head and body of the document together.</p>
+<p>Such ends notes for Stage 0.</p>
+
